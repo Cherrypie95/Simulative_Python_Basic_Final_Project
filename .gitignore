@@ -3,3 +3,4 @@
 *.json
 credentials.py
 *.cfg
+\__pycache__

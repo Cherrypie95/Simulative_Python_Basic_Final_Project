@@ -26,6 +26,7 @@
 4. [Создать сервисный аккаунт в Google для работы с Google Sheets API](https://support.google.com/workspacemigrate/answer/10839762). Обязательно включите Google Sheets API.
 5. [Сгенерировать файл с ключами от учетной записи сервисного аккаунта.](https://developers.google.com/workspace/guides/create-credentials#create_credentials_for_a_service_account) Назвать его `creds.json` и поместить в корень проекта.
 6. [Сгенерировать пароль приложения Google для отправки Email](https://support.google.com/accounts/answer/185833)
+7. Запустить файл `etl_pipeline.py`
 
 ## Пример Email
 <img src="../python_basic_final/email_test.jpg" width="220" height="500">
