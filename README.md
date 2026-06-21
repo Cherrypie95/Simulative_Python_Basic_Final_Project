@@ -13,19 +13,20 @@
 1. Сделать клон проекта.
 2. Создать локальную базу данных в СУБД PostgreSQL.
 3. Создать файл `credentials.py` в корне проекта и прописать значения параметров:
-    - `client` = "клиент для доступа к API". Берем из текста задания.
-    - `client_key` = "Ключ для доступа к API". Берем из текста задания.
-    - `user_db` = "Имя пользователя БД". 
+    - `client` = "клиент для доступа к API". Берем из текста задания
+    - `client_key` = "Ключ для доступа к API". Берем из текста задания
+    - `user_db` = "Имя пользователя БД"
     - `password_db` = "Пароль доступа к БД". 
-    - `host_db` = "localhost". Если работаете с удаленной базой, то укажите адрес сервера БД.
+    - `host_db` = "localhost". Если работаете с удаленной базой, то укажите адрес сервера БД
     - `port_db` = 5432
     - `sender_gmail` = "Email адресата"
-    - `smtp_server_gmail` = "smtp.gmail.com". Для другого почтового сервиса нужно указать другой адрес сервера.
-    - `smtp_port_gmail` = 465. Для другого почтового сервиса нужно указать другой порт.
+    - `smtp_server_gmail` = "smtp.gmail.com". Для другого почтового сервиса нужно указать другой адрес сервера
+    - `smtp_port_gmail` = 465. Для другого почтового сервиса нужно указать другой порт
     - `password_gmail` = "Ваш пароль приложения для авторизации в Google". Как получить смотрите п.6
-4. [Создать сервисный аккаунт в Google для работы с Google Sheets API](https://support.google.com/workspacemigrate/answer/10839762). Обязательно включите Google Sheets API.
+4. [Создать сервисный аккаунт в Google для работы с Google Sheets API.](https://support.google.com/workspacemigrate/answer/10839762). Обязательно включите Google Sheets API.
 5. [Сгенерировать файл с ключами от учетной записи сервисного аккаунта.](https://developers.google.com/workspace/guides/create-credentials#create_credentials_for_a_service_account) Назвать его `creds.json` и поместить в корень проекта.
-6. [Сгенерировать пароль приложения Google для отправки Email](https://support.google.com/accounts/answer/185833)
-7. Установить зависимости из файла `requirements.txt`
-8. Запустить файл `etl_pipeline.py`
+6. Создать Google таблицу. Указать название таблицы в переменной `sheet` метода `import_data_google_sheet` и название рабочего листа в переменной `sheet1` метода `import_data_google_sheet`.
+6. [Сгенерировать пароль приложения Google для отправки Email.](https://support.google.com/accounts/answer/185833)
+7. Установить зависимости из файла `requirements.txt`.
+8. Запустить файл `etl_pipeline.py`.
 
